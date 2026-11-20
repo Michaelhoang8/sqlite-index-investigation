@@ -1,0 +1,44 @@
+{
+  "captured_at_utc": "2026-11-20T22:10:14.716368+00:00",
+  "source": "Actual browser rendering of docs/report.html",
+  "recording": "Continuous automated browser review; not manual development footage",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "page_title": "SQLite index investigation",
+  "captures": [
+    {
+      "path": "docs/screenshots/01_overview.png",
+      "section": "overview",
+      "sha256": "67c3270e444b0a221c18606a3c21fbb87410c21c9532399ef4d40650b073294b"
+    },
+    {
+      "path": "docs/screenshots/02_queries.png",
+      "section": "queries",
+      "sha256": "c96ce97167ac94bbc9b27f948ecf5370d5c1e5aed55e563cdc1e5bf1609d4059"
+    },
+    {
+      "path": "docs/screenshots/03_plans.png",
+      "section": "plans",
+      "sha256": "0607bb01d9a0c6fcdbd82d8c4ae9e3e15a37e8383163698f5eb03d8ceb98610f"
+    },
+    {
+      "path": "docs/screenshots/04_writes.png",
+      "section": "writes",
+      "sha256": "9177bfa14860b8a409ae834c0290022f829ac35de562b9d3bc8f11e8daf4b7e4"
+    },
+    {
+      "path": "docs/screenshots/05_pagination.png",
+      "section": "pagination",
+      "sha256": "48ff78e8a7bae30340c5f16325a1b29ee71485840b7a8839240ef2f326debf4e"
+    },
+    {
+      "path": "docs/screenshots/06_methods.png",
+      "section": "methods",
+      "sha256": "3d349ac5445dc60773099e94d85be3173eb786ab32492b5564c4158f76d97c5e"
+    }
+  ],
+  "report_sha256_normalized_text": "1521a53d186e813c801ef3b97621702e5d049facc354e9c2e3a6e86a1982f36e",
+  "video_sha256": "405055d64f23f6082750cfa4130abe74fa71b1d400df1c2ba4bc4be049813a02"
+}

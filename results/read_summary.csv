@@ -1,0 +1,16 @@
+configuration,query,n,median_ms,p95_ms,min_ms,max_ms
+baseline,customer_history,31,8.4878,9.07885,6.0359,9.1333
+baseline,regional_sales,31,16.1899,17.5813,12.9819,18.0253
+baseline,open_queue,31,12.7015,13.7525,10.5178,14.2054
+single_column,customer_history,31,0.1614,0.18605,0.1003,0.1965
+single_column,regional_sales,31,16.9022,17.8448,13.4804,17.9101
+single_column,open_queue,31,6.2195,6.92725,4.0272,7.0636
+composite,customer_history,31,0.0932,0.1174,0.0641,0.1316
+composite,regional_sales,31,3.0071,3.0673,1.9913,3.1712
+composite,open_queue,31,0.1547,0.17535,0.0917,0.2043
+covering,customer_history,31,0.0506,0.08610000000000001,0.0443,0.1
+covering,regional_sales,31,1.1662,2.0587999999999997,1.122,2.0942
+covering,open_queue,31,0.0829,0.14575,0.0679,0.1469
+partial,customer_history,31,0.0493,0.06605,0.0433,0.0902
+partial,regional_sales,31,1.1282,1.4797,1.1144,1.5355
+partial,open_queue,31,0.0709,0.0994,0.0658,0.1354

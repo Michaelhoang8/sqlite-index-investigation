@@ -1,0 +1,6 @@
+configuration,bytes,pages,page_size,index_build_and_analyze_ms
+partial,40271872,9832,4096,342.103
+covering,48504832,11842,4096,420.8949
+composite,44511232,10867,4096,555.6526
+single_column,29732864,7259,4096,332.4019
+baseline,22196224,5419,4096,47.272

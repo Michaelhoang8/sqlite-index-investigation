@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-11-20T22:01:37.258635+00:00",
+  "python": "3.13.17",
+  "sqlite": "3.50.4",
+  "os": "Windows",
+  "os_release": "11",
+  "architecture": "AMD64",
+  "row_count": 200000,
+  "seed": 81427,
+  "repetitions": 31,
+  "warmups": 3,
+  "configuration_order": [
+    "partial",
+    "covering",
+    "composite",
+    "single_column",
+    "baseline"
+  ],
+  "data_sha256": "ec80ce4a0541528b2e2854467db935578e0054f00d3514011d9e0d6acc23aab3",
+  "status_counts": {
+    "cancelled": 18062,
+    "open": 15881,
+    "paid": 166057
+  },
+  "cache_size_kib": 32768,
+  "journal_mode": "DELETE",
+  "synchronous": "FULL",
+  "temp_store": "MEMORY",
+  "automatic_index": false,
+  "read_scope": "execute plus fetchall; warmed connection and uncontrolled OS cache",
+  "insert_scope": "200 inserts inside one transaction; begin and rollback excluded; no durable commit",
+  "pagination_scope": "50 rows; keyset cursor supplied before timing; equivalent result sets",
+  "limitations": [
+    "Single local process; no concurrency",
+    "Configuration order seeded, not counterbalanced",
+    "Synthetic distribution and fixed query parameters",
+    "No cold-cache or disk-throughput claims",
+    "Sample p95 is descriptive, not a service-level estimate"
+  ]
+}

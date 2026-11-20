@@ -1,0 +1,166 @@
+[
+  {
+    "configuration": "partial",
+    "query": "customer_history",
+    "parameters": [
+      42
+    ],
+    "plan": [
+      "SEARCH orders USING COVERING INDEX idx_customer_history (customer_id=?)"
+    ]
+  },
+  {
+    "configuration": "partial",
+    "query": "regional_sales",
+    "parameters": [
+      "North",
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING COVERING INDEX idx_region_sales (region=? AND status=? AND created_at>?)",
+      "USE TEMP B-TREE FOR GROUP BY"
+    ]
+  },
+  {
+    "configuration": "partial",
+    "query": "open_queue",
+    "parameters": [
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING COVERING INDEX idx_open_queue (created_at>?)"
+    ]
+  },
+  {
+    "configuration": "covering",
+    "query": "customer_history",
+    "parameters": [
+      42
+    ],
+    "plan": [
+      "SEARCH orders USING COVERING INDEX idx_customer_history (customer_id=?)"
+    ]
+  },
+  {
+    "configuration": "covering",
+    "query": "regional_sales",
+    "parameters": [
+      "North",
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING COVERING INDEX idx_region_sales (region=? AND status=? AND created_at>?)",
+      "USE TEMP B-TREE FOR GROUP BY"
+    ]
+  },
+  {
+    "configuration": "covering",
+    "query": "open_queue",
+    "parameters": [
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING COVERING INDEX idx_queue (status=? AND created_at>?)"
+    ]
+  },
+  {
+    "configuration": "composite",
+    "query": "customer_history",
+    "parameters": [
+      42
+    ],
+    "plan": [
+      "SEARCH orders USING INDEX idx_customer_history (customer_id=?)"
+    ]
+  },
+  {
+    "configuration": "composite",
+    "query": "regional_sales",
+    "parameters": [
+      "North",
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING INDEX idx_region_sales (region=? AND status=? AND created_at>?)",
+      "USE TEMP B-TREE FOR GROUP BY"
+    ]
+  },
+  {
+    "configuration": "composite",
+    "query": "open_queue",
+    "parameters": [
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING INDEX idx_queue (status=? AND created_at>?)"
+    ]
+  },
+  {
+    "configuration": "single_column",
+    "query": "customer_history",
+    "parameters": [
+      42
+    ],
+    "plan": [
+      "SEARCH orders USING INDEX idx_customer (customer_id=?)",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  },
+  {
+    "configuration": "single_column",
+    "query": "regional_sales",
+    "parameters": [
+      "North",
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING INDEX idx_region (region=?)",
+      "USE TEMP B-TREE FOR GROUP BY"
+    ]
+  },
+  {
+    "configuration": "single_column",
+    "query": "open_queue",
+    "parameters": [
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SEARCH orders USING INDEX idx_status (status=?)",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  },
+  {
+    "configuration": "baseline",
+    "query": "customer_history",
+    "parameters": [
+      42
+    ],
+    "plan": [
+      "SCAN orders",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  },
+  {
+    "configuration": "baseline",
+    "query": "regional_sales",
+    "parameters": [
+      "North",
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SCAN orders",
+      "USE TEMP B-TREE FOR GROUP BY"
+    ]
+  },
+  {
+    "configuration": "baseline",
+    "query": "open_queue",
+    "parameters": [
+      "2025-07-21T11:30:00"
+    ],
+    "plan": [
+      "SCAN orders",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  }
+]
