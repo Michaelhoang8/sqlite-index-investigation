@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-11-20T22:10:14.716368+00:00",
+  "captured_at_utc": "2026-11-21T01:04:08.590463+00:00",
   "source": "Actual browser rendering of docs/report.html",
   "recording": "Continuous automated browser review; not manual development footage",
   "viewport": {
@@ -7,6 +7,8 @@
     "height": 1000
   },
   "page_title": "SQLite index investigation",
+  "report_sha256_normalized_text": "3672b3ba8cfa20adeb991e4bc46ba9943c80fc07b53cb303d4051e32d8d79162",
+  "video_sha256": "ee2589c92bcf08fc917b334501638e84a65fc6244b67adc9738b9868eaf3c894",
   "captures": [
     {
       "path": "docs/screenshots/01_overview.png",
@@ -38,7 +40,5 @@
       "section": "methods",
       "sha256": "3d349ac5445dc60773099e94d85be3173eb786ab32492b5564c4158f76d97c5e"
     }
-  ],
-  "report_sha256_normalized_text": "1521a53d186e813c801ef3b97621702e5d049facc354e9c2e3a6e86a1982f36e",
-  "video_sha256": "405055d64f23f6082750cfa4130abe74fa71b1d400df1c2ba4bc4be049813a02"
+  ]
 }
