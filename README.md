@@ -1,5 +1,7 @@
 # SQLite index investigation
 
+**[View the report in your browser](https://Michaelhoang8.github.io/sqlite-index-investigation/)**
+
 An executable performance study of five index configurations over **200,000 synthetic orders**. It compares query latency, query plans, file size, insertion maintenance, and equivalent offset/keyset pagination results.
 
 ![Measured query medians](docs/charts/01_read_latency.png)
